@@ -1,1 +1,5 @@
 /* css file is linked to html */
+
+.questions-container {
+    border: 3px solid black;
+}
