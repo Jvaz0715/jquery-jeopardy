@@ -1,5 +1,21 @@
 /* css file is linked to html */
+* {
+    box-sizing: border-box;
+  }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid purple;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .questions-container {
 	border: 3px solid black;
