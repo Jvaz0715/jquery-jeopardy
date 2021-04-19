@@ -1,5 +1,26 @@
 /* css file is linked to html */
 
+/* .questions-container {
+    border: 3px solid green;
+    display: flex;
+    height: 300px;
+
+} */
+
 .questions-container {
-    border: 3px solid black;
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:960px;
+	width:960px;
+	padding: 0;
+	border: none;
+}
+
+.grid {
+	background-color: blue;
+	outline:1px solid #000;
+	display:inline-block;
 }
