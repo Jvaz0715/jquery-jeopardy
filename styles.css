@@ -1,26 +1,23 @@
 /* css file is linked to html */
-
-/* .questions-container {
-    border: 3px solid green;
-    display: flex;
-    height: 300px;
-
-} */
+* {
+    box-sizing: border-box;
+  }
 
 .questions-container {
-	position: relative;
-	top: 30px;
-	outline:2px solid #000;
-	font-size: 0;
-	margin:auto;
-	height:960px;
-	width:960px;
-	padding: 0;
-	border: none;
+	border: 3px solid green;
+    height: 400px;
+    width: 600px;
+    
 }
 
-.grid {
-	background-color: blue;
-	outline:1px solid #000;
-	display:inline-block;
+.row {
+    border: 2px solid red;
+    height: 20%;
+    display: flex;
 }
+
+.column {
+    border: 1px solid blue;
+    width: 20%;
+}
+
