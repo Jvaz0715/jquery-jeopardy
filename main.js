@@ -82,8 +82,19 @@ createClickEvents(".column-800", value800Qs);
 
 
 $('.submit-button').click(function () {
-    console.log($('.jeopardy-answer').text());
-    console.log($('.user-answers').val());
-    console.log("submit button was clicked")
+    // get the correct answer
+    const jeopardyAnswer = $('.jeopardy-answer').text();
+    console.log(jeopardyAnswer);
+    // get the user input
+    const userInput = $('.user-answers').val();
+    console.log(userInput);
+    // get the score div
+    const score = $('.update-score');
+
+    if(userInput === jeopardyAnswer) {
+        score.text("Score was updated!")
+    }
+
+
 });
 
