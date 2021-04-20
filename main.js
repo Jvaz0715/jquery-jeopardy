@@ -62,10 +62,10 @@ function createClickEvents(string, array) {
     $(string).each(function(index) {
         $(this).click(function() {
             let randomNumber = Math.floor(Math.random() * (array.length + 1));
-            $(".questions-data-container").text(QUESTIONS[randomNumber].question);
+            $(".questions-data-container").text(array[randomNumber].question);
             console.log(randomNumber);
-            console.log(QUESTIONS[randomNumber].question);
-            console.log(QUESTIONS[randomNumber].value);
+            console.log(array[randomNumber].question);
+            console.log(array[randomNumber].value);
         })
     })
 }
