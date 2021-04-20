@@ -98,8 +98,7 @@ $('.submit-button').click(function () {
         let scoreNumber = Number(score.text());
         scoreNumber = scoreNumber + 100;
         console.log("scoreNumber is: " + scoreNumber);
-        let scoreString = scoreNumber.toString();
-        score.text(scoreString);
+        score.text(scoreNumber);
         console.log(typeof score.text());
         console.log(typeof scoreNumber);
     }
