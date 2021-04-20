@@ -86,17 +86,22 @@ createClickEvents(".column-800", value800Qs);
 $('.submit-button').click(function () {
     // get the correct answer
     const jeopardyAnswer = $('.jeopardy-answer').text();
-    console.log(jeopardyAnswer);
+    // console.log(jeopardyAnswer);
     // get the user input
     const userInput = $('.user-answers').val();
-    console.log(userInput);
+    // console.log(userInput);
     // get the score div
     const score = $('.update-score');
     let scoreCounter = 0;
 
     if(userInput === jeopardyAnswer) {
-        scoreCounter += 1;
-        score.text(scoreCounter);
+        let scoreNumber = Number(score.text());
+        scoreNumber = scoreNumber + 100;
+        console.log("scoreNumber is: " + scoreNumber);
+        let scoreString = scoreNumber.toString();
+        score.text(scoreString);
+        console.log(typeof score.text());
+        console.log(typeof scoreNumber);
     }
 
 
