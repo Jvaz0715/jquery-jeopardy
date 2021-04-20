@@ -54,22 +54,19 @@ for (let i = 0; i < QUESTIONS.length; i++) {
 //     })
 // })
 
-
-   
-
-
 function createClickEvents(string, array) {
     $(string).each(function(index) {
         $(this).click(function() {
             let randomNumber = Math.floor(Math.random() * (array.length + 1));
-            console.log(array[randomNumber]);
-            console.log(array[randomNumber].question);
+            // console.log(array[randomNumber]);
+
+            // console.log(array[randomNumber].question);
             $(".jeopardy-question").text(array[randomNumber].question);
-        
-            console.log(array[randomNumber].value);
+            
+            // console.log(array[randomNumber].value);
             $(".jeopardy-value").text(array[randomNumber].value);
 
-            console.log(array[randomNumber].answer);
+            // console.log(array[randomNumber].answer);
             $(".jeopardy-answer").text(array[randomNumber].answer);
         })
     })
@@ -80,3 +77,12 @@ createClickEvents(".column-200", value200Qs);
 createClickEvents(".column-400", value400Qs);
 createClickEvents(".column-600", value600Qs);
 createClickEvents(".column-800", value800Qs);
+
+// work on the submit answer button here
+
+
+$('.submit-button').click(function () {
+    console.log("submit button was clicked")
+});
+
+        
