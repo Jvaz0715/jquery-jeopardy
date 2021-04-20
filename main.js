@@ -21,4 +21,35 @@ questionsContainer.append(row3);
 questionsContainer.append(row4);
 questionsContainer.append(row5);
 
+//declare five arrays to hold only questions of that value
+const value100Qs = [];
+const value200Qs = [];
+const value400Qs = [];
+const value600Qs = [];
+const value800Qs = [];
 
+//loop through all the questions and push into appropriate array above
+
+for (let i = 0; i < QUESTIONS.length; i++) {
+    if (QUESTIONS[i].value === '$100') {
+        value100Qs.push(QUESTIONS[i]);
+    } else if (QUESTIONS[i].value === '$200') {
+        value200Qs.push(QUESTIONS[i]);
+    } else if (QUESTIONS[i].value === '$400') {
+        value400Qs.push(QUESTIONS[i]);
+    } else if (QUESTIONS[i].value === '$600') {
+        value600Qs.push(QUESTIONS[i]);
+    } else if (QUESTIONS[i].value === '$800') {
+        value800Qs.push(QUESTIONS[i]);
+    }
+}
+
+//loop through the columns with class column
+
+// this loops through each box and console logs a message
+// TODO: make it so that when you click a box, it 
+$(".column").each(function(index) {
+    $(this).click(function() {
+        console.log("div was clicked!")
+    })
+})
