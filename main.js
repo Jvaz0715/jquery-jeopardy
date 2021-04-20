@@ -82,7 +82,8 @@ createClickEvents(".column-800", value800Qs);
 
 
 $('.submit-button').click(function () {
+    console.log($('.jeopardy-answer').text());
+    console.log($('.user-answers').val());
     console.log("submit button was clicked")
 });
 
-        
