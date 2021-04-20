@@ -5,11 +5,21 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/9/b4/9b485bb0-1f7e-5176-a029-9f9e6451aff3/5b32e37725fbc.image.jpg?resize=1200%2C800");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-all {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px solid purple;
     background-image: url("https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2030&q=80");
+    margin: 5%;
+    padding: 5%;
 }
 
 .game-container {
