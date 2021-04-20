@@ -68,6 +68,8 @@ function createClickEvents(string, array) {
 
             // console.log(array[randomNumber].answer);
             $(".jeopardy-answer").text(array[randomNumber].answer);
+
+            $('.user-answers').val("");
         })
     })
 }
@@ -90,9 +92,11 @@ $('.submit-button').click(function () {
     console.log(userInput);
     // get the score div
     const score = $('.update-score');
+    let scoreCounter = 0;
 
     if(userInput === jeopardyAnswer) {
-        score.text("Score was updated!")
+        scoreCounter += 1;
+        score.text(scoreCounter);
     }
 
 
