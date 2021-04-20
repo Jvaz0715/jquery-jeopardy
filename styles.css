@@ -49,8 +49,12 @@ body {
     justify-content: space-between;
 }
 
-.questions-data-container {
+.jeopardy-question {
     margin-top: 20px;
     font-size: 44px;
     font-weight: bold;
+}
+
+.hidden {
+    visibility: hidden;
 }
