@@ -61,7 +61,7 @@ function createClickEvents(string, array) {
             // console.log(array[randomNumber]);
 
             // console.log(array[randomNumber].question);
-            $(".jeopardy-question").text(array[randomNumber].question);
+            $(".jeopardy-question").text(array[randomNumber].question.toUpperCase());
             
             // console.log(array[randomNumber].value);
             $(".jeopardy-value").text(array[randomNumber].value);
@@ -70,6 +70,9 @@ function createClickEvents(string, array) {
             $(".jeopardy-answer").text(array[randomNumber].answer);
 
             $('.user-answers').val("");
+
+            $('.jeopardy-question').css("background-color", "#060CE9");
+            $('.jeopardy-question').css("border", "3px solid black");
         })
     })
 }
