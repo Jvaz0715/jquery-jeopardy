@@ -43,7 +43,14 @@ body {
 
 .user-form {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.questions-data-container {
+    margin-top: 20px;
+    font-size: 44px;
+    font-weight: bold;
 }
