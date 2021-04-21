@@ -96,7 +96,12 @@ $('.submit-button').click(function () {
 
     if(userAnswer.toLowerCase() === jeopardyAnswer.toLowerCase()) {
         //make sure to change the wording to Correct!
-        $('.jeopardy-question').text("Correct!")
+        $('.jeopardy-question').text("Correct!");
+        //change card background to clear
+        $('.jeopardy-question').css("background-color", "transparent");
+        $('.jeopardy-question').css("border", "none");
+        $('.questions-data-container').css("width", "200px");
+        $('.questions-data-container').css("height", "100px");
         let scoreNumber = Number(score.text());
         //update scoreNumber based on the questions value
         // create another if statement to switch score
