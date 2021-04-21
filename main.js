@@ -48,11 +48,6 @@ for (let i = 0; i < QUESTIONS.length; i++) {
 
 // this loops through each box and console logs a message
 // TODO: make it so that when you click a box, it 
-// $(".column").each(function(index) {
-//     $(this).click(function() {
-//         console.log("div was clicked!")
-//     })
-// })
 
 function createClickEvents(string, array) {
     $(string).each(function(index) {
@@ -93,14 +88,18 @@ $('.submit-button').click(function () {
     const jeopardyAnswer = $('.jeopardy-answer').text();
     // console.log(jeopardyAnswer);
     // get the user input
-    const userInput = $('.user-answers').val();
+    const userAnswer = $('.user-answers').val();
     // console.log(userInput);
     // get the score div
     const score = $('.update-score');
     let scoreCounter = 0;
 
-    if(userInput === jeopardyAnswer) {
+    if(userAnswer.toLowerCase() === jeopardyAnswer.toLowerCase()) {
+        //make sure to change the wording to Correct!
+        $('.jeopardy-question').text("Correct!")
         let scoreNumber = Number(score.text());
+        //update scoreNumber based on the questions value
+        // create another if statement to switch score
         scoreNumber = scoreNumber + 100;
         console.log("scoreNumber is: " + scoreNumber);
         score.text(scoreNumber);
