@@ -103,7 +103,8 @@ $('.submit-button').click(function () {
         $('.jeopardy-question').css("border", "none");
         $('.questions-data-container').css("width", "200px");
         $('.questions-data-container').css("height", "100px");
-        $('.user-answers').val("type answer here")
+        $('.user-answers').val("");
+        $('.user-answers').attr("placeholder", "type answer here")
         let scoreNumber = Number(score.text());
         //update scoreNumber based on the questions value
         // create another if statement to switch score
@@ -128,20 +129,20 @@ $('.submit-button').click(function () {
     }
 });
 
-//get the input element
-const userScore =$('.score-container');
+// // Get the input element
+// const userScore = $('.update-score');
 
-//retrieve a value from local storage
-const prevUserScore = window.localStorage.getItem('userScore');
+// // Retreive a value from local storage
+// const prevScore = window.localStorage.getItem('userScoreText');
 
-//set the text input to that value
-if(prevUserScore !== null) {
-    userScore.text(prevUserScore);
-}
+// // Set the text input to that value 
+// if (prevScore !== null) {
+//     userScore.text(prevScore);
+// }
 
-//when the value of the input changes
-userScore.change(function() {
+// // When the value of the input changes
+// userScore.change(function () {
 
-    //store that value in local storage
-    window.localStorage.setItem('userScore', userScore.text())
-})
+//     // Store that value in local storage
+//     window.localStorage.setItem('userScoreText', userScore.text());
+// });
