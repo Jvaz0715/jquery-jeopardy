@@ -74,11 +74,13 @@ body {
     flex-direction: column;
     margin: 20px;
     padding: 10px;
+    width: 600px;
+    height: 300px;
 }
 
 .jeopardy-question {
     margin-top: 20px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
