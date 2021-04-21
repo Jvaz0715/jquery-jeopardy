@@ -94,7 +94,8 @@ $('.submit-button').click(function () {
     const score = $('.update-score');
     let scoreCounter = 0;
 
-    if(userAnswer.toLowerCase() === jeopardyAnswer.toLowerCase()) {
+    if(userAnswer.toLowerCase() === jeopardyAnswer.toLowerCase() ||
+    jeopardyAnswer.toLowerCase().includes(userAnswer.toLowerCase())) {
         //make sure to change the wording to Correct!
         $('.jeopardy-question').text("Correct!");
         //change card background to clear
