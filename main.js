@@ -123,8 +123,25 @@ $('.submit-button').click(function () {
         score.text(scoreNumber);
         console.log(typeof score.text());
         console.log(typeof scoreNumber);
+
+       
     }
-
-
 });
 
+//get the input element
+const userScore =$('.score-container');
+
+//retrieve a value from local storage
+const prevUserScore = window.localStorage.getItem('userScore');
+
+//set the text input to that value
+if(prevUserScore !== null) {
+    userScore.text(prevUserScore);
+}
+
+//when the value of the input changes
+userScore.change(function() {
+
+    //store that value in local storage
+    window.localStorage.setItem('userScore', userScore.text())
+})
