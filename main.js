@@ -106,7 +106,18 @@ $('.submit-button').click(function () {
         let scoreNumber = Number(score.text());
         //update scoreNumber based on the questions value
         // create another if statement to switch score
-        scoreNumber = scoreNumber + 100;
+        if ($(".jeopardy-value").text() === "$100") {
+            scoreNumber = scoreNumber + 100;
+        } else if ($(".jeopardy-value").text() === "$200") {
+            scoreNumber = scoreNumber + 200;
+        } else if ($(".jeopardy-value").text() === "$400") {
+            scoreNumber = scoreNumber + 400;
+        } else if ($(".jeopardy-value").text() === "$600") {
+            scoreNumber = scoreNumber + 600;
+        } else if ($(".jeopardy-value").text() === "$800") {
+            scoreNumber = scoreNumber + 800;
+        }
+    
         console.log("scoreNumber is: " + scoreNumber);
         score.text(scoreNumber);
         console.log(typeof score.text());
