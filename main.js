@@ -102,6 +102,7 @@ $('.submit-button').click(function () {
         $('.jeopardy-question').css("border", "none");
         $('.questions-data-container').css("width", "200px");
         $('.questions-data-container').css("height", "100px");
+        $('.user-answers').val("type answer here")
         let scoreNumber = Number(score.text());
         //update scoreNumber based on the questions value
         // create another if statement to switch score
