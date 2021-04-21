@@ -93,7 +93,7 @@ body {
 
 .jeopardy-question {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
@@ -127,4 +127,10 @@ body {
 .jep-gif {
     width: 350px;
 
+}
+
+.form-label {
+    color: #FFD700;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
