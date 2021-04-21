@@ -73,6 +73,8 @@ function createClickEvents(string, array) {
 
             $('.jeopardy-question').css("background-color", "#060CE9");
             $('.jeopardy-question').css("border", "3px solid black");
+            $('.questions-data-container').css("width", "600px");
+            $('.questions-data-container').css("height", "300px");
         })
     })
 }
