@@ -125,24 +125,10 @@ $('.submit-button').click(function () {
         console.log(typeof score.text());
         console.log(typeof scoreNumber);
 
+        
+        
        
     }
 });
 
-// // Get the input element
-// const userScore = $('.update-score');
 
-// // Retreive a value from local storage
-// const prevScore = window.localStorage.getItem('userScoreText');
-
-// // Set the text input to that value 
-// if (prevScore !== null) {
-//     userScore.text(prevScore);
-// }
-
-// // When the value of the input changes
-// userScore.change(function () {
-
-//     // Store that value in local storage
-//     window.localStorage.setItem('userScoreText', userScore.text());
-// });
