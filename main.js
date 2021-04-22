@@ -133,6 +133,10 @@ $('.submit-button').click(function () {
    
 });
 
+$('.reset-button').click(function () {
+    localStorage.clear();
+});
+
 // you need to get the item outside the submit button function
 
 $('.update-score').text(localStorage.getItem("userScore"));
