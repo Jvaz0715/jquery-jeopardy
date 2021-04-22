@@ -125,9 +125,9 @@ $('.submit-button').click(function () {
         console.log(typeof score.text());
         console.log(typeof scoreNumber);
     }
-
+    // you need to set the item OUTSIDE the if statement
     localStorage.setItem("userScore", score.text());
 });
 
-
+// you need to get the item outside the submit button function
 $('.update-score').text(localStorage.getItem("userScore"));
