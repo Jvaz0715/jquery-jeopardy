@@ -131,3 +131,8 @@ $('.submit-button').click(function () {
 
 // you need to get the item outside the submit button function
 $('.update-score').text(localStorage.getItem("userScore"));
+
+//===============================
+// TODO: Create a button that will reset the score to 
+// 0 if the user wants to start their score over
+//===============================
