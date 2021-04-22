@@ -124,11 +124,10 @@ $('.submit-button').click(function () {
         score.text(scoreNumber);
         console.log(typeof score.text());
         console.log(typeof scoreNumber);
-
-        
-       
     }
+
+    localStorage.setItem("userScore", score.text());
 });
 
 
-
+$('.update-score').text(localStorage.getItem("userScore"));
