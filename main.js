@@ -81,8 +81,9 @@ createClickEvents(".column-400", value400Qs);
 createClickEvents(".column-600", value600Qs);
 createClickEvents(".column-800", value800Qs);
 
-// work on the submit answer button here
 
+
+// work on the submit answer button here
 
 $('.submit-button').click(function () {
     // get the correct answer
@@ -98,6 +99,7 @@ $('.submit-button').click(function () {
     if(userAnswer.toLowerCase() === jeopardyAnswer.toLowerCase() ||
     jeopardyAnswer.toLowerCase().includes(userAnswer.toLowerCase())) {
         //make sure to change the wording to Correct!
+        $('.dollar-sign').attr('id', 'show-dollar');
         $('.jeopardy-question').text("Correct!");
         //change card background to clear
         $('.jeopardy-question').css("background-color", "transparent");
@@ -128,7 +130,7 @@ $('.submit-button').click(function () {
     }
     // you need to set the item OUTSIDE the if statement
     localStorage.setItem("userScore", score.text());
-    $('.dollar-sign').attr('id', 'show-dollar');
+   
 });
 
 // you need to get the item outside the submit button function

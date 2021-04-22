@@ -107,9 +107,9 @@ body {
     text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
 /* turn on before submitting assignment */
-/* .hidden {
+.hidden {
     visibility: hidden;
-} */
+}
 
 .submit-button {
     width: 110px;
