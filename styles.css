@@ -145,3 +145,11 @@ body {
     text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
     margin-bottom: 10px;
 }
+
+.dollar-sign {
+    visibility: hidden;
+}
+
+#show-dollar {
+    visibility: visible;
+}

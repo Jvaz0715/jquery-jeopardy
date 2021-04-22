@@ -1,4 +1,5 @@
 // using jquery, get the body element
+
 const gameContainer = $('.game-container');
 
 const questionsContainer = $('<div class="questions-container"></div>');
@@ -127,9 +128,11 @@ $('.submit-button').click(function () {
     }
     // you need to set the item OUTSIDE the if statement
     localStorage.setItem("userScore", score.text());
+    $('.dollar-sign').attr('id', 'show-dollar');
 });
 
 // you need to get the item outside the submit button function
+
 $('.update-score').text(localStorage.getItem("userScore"));
 
 //===============================
