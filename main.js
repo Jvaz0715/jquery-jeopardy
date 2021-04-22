@@ -135,6 +135,7 @@ $('.submit-button').click(function () {
 
 $('.reset-button').click(function () {
     localStorage.clear();
+    location.reload(true); 
 });
 
 // you need to get the item outside the submit button function
