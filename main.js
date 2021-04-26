@@ -64,7 +64,7 @@ function createClickEvents(string, array) {
 
             // console.log(array[randomNumber].answer);
             $(".jeopardy-answer").text(array[randomNumber].answer);
-            console.log($(".jeopardy-answer").text(array[randomNumber].answer);)
+            console.log($(".jeopardy-answer").text(array[randomNumber].answer));
             $('.user-answers').val("");
 
             $('.jeopardy-question').css("background-color", "#060CE9");
